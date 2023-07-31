@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styla</title>
+    <link rel="icon" type="image/x-icon" href="./public/img/logo.png">
+    <link rel="stylesheet" href="./public/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.tailgrids.com/tailgrids-fallback.css" />
+</head>
+
+<body>
+    <div class="nav_bar sticky top-0 w-full z-10">
+        <nav class="relative px-4 lg:px-12 py-4 flex justify-between items-center bg-white">
+            <a class="text-2xl font-bold leading-none" href="#">
+                STYLA
+            </a>
+            <div class="xl:hidden">
+                <button class="navbar-burger flex items-center text-blue-600 p-3">
+                    <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Mobile menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                    </svg>
+                </button>
+            </div>
+            <ul
+                class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 xl:flex xl:mx-auto xl:flex xl:items-center xl:w-auto xl:space-x-6">
+                <li class="flex items-center gap-2 cursor-pointer">Products
+                    <svg width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6.16083 8.0315C5.84323 8.49697 5.15677 8.49698 4.83917 8.0315L0.724351 2.0009C0.36202 1.46987 0.742315 0.75 1.38518 0.75L9.61482 0.75C10.2577 0.75 10.638 1.46987 10.2756 2.0009L6.16083 8.0315Z"
+                            fill="#010101" />
+                    </svg>
+                </li>
+                <li class="cursor-pointer">Customer Stories </li>
+                <li class="cursor-pointer">Pricing</li>
+                <li class="cursor-pointer">Partner</li>
+                <li class="flex items-center gap-2 cursor-pointer">Resources
+                    <svg width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6.16083 8.0315C5.84323 8.49697 5.15677 8.49698 4.83917 8.0315L0.724351 2.0009C0.36202 1.46987 0.742315 0.75 1.38518 0.75L9.61482 0.75C10.2577 0.75 10.638 1.46987 10.2756 2.0009L6.16083 8.0315Z"
+                            fill="#010101" />
+                    </svg>
+                </li>
+            </ul>
+            <div class="hidden xl:inline-block">
+                <a class="hidden lg:inline-block border-2 rounded font-medium  text-blue-700 border-none underline px-8 py-2 rounded cursor-pointer"
+                    href="#">Login</a>
+                <a class="hidden lg:inline-block font-medium bg-blue-700 text-white px-6 py-2 rounded cursor-pointer"
+                    href="#">Install app</a>
+            </div>
+        </nav>
+        <div class="navbar-menu relative z-50 hidden">
+            <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+            <nav
+                class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+                <div class="flex items-center mb-8">
+                    <a class="mr-auto text-2xl font-bold leading-none" href="#">
+                        STYLA
+                    </a>
+                    <button class="navbar-close">
+                        <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div>
+                    <ul>
+                        <li class="mb-1 flex items-center gap-2 cursor-pointer">Product
+                            <svg width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.16083 8.0315C5.84323 8.49697 5.15677 8.49698 4.83917 8.0315L0.724351 2.0009C0.36202 1.46987 0.742315 0.75 1.38518 0.75L9.61482 0.75C10.2577 0.75 10.638 1.46987 10.2756 2.0009L6.16083 8.0315Z"
+                                    fill="#010101" />
+                            </svg>
+                        </li>
+                        <li class="mb-1">Customer Stories
+                        </li>
+                        <li class="mb-1">Pricing
+                        </li>
+                        <li class="mb-1">Partner
+                        </li>
+                        <li class="mb-1 flex items-center gap-2 cursor-pointer">Resources
+                            <svg width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.16083 8.0315C5.84323 8.49697 5.15677 8.49698 4.83917 8.0315L0.724351 2.0009C0.36202 1.46987 0.742315 0.75 1.38518 0.75L9.61482 0.75C10.2577 0.75 10.638 1.46987 10.2756 2.0009L6.16083 8.0315Z"
+                                    fill="#010101" />
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="flex flex-col gap-12 lg:gap-24">
+        <section class="hero_section mt-16 flex flex-col justify-around items-center gap-1 h-screen px-4 md:px-8 lg:px-16 xl:px-32">
+            <div class="flex flex-col justify-center items-center gap-2 lg:gap-3">
+                <div class="bg text-4xl font-bold flex justify-center text-center max-w-fit">The headless frontend for your BigCommerce store</div>
+                <p class="text-lg text-center text-slate-700 max-w-4xl">Styla turns your webshop into a blazing fast, conversion
+                    optimized and truly mobile experience. Get started for free and in seconds.</p>
+            </div>
+            <div class="nav_button flex flex-col md:flex-row justify-center gap-2">
+                <button class="font-medium bg-blue-700 text-white px-6 py-2 rounded cursor-pointer">Install app</button>
+                <button class="border-2 rounded font-medium text-blue-700 border-blue-700 px-6 py-2 rounded cursor-pointer">Get
+                    a Demo</button>
+            </div>
+            <img class="mt-5 rounded-t-lg" src="./public/img/hero_img.png" />
+        </section>
+        <section class="trusted_section flex flex-col justify-center xl:max-w-6xl mx-auto px-4">
+            <header class="text-center mx-auto mb-8 lg:px-4">
+                <h2 class="text-xl leading-normal mb-2 font-bold text-black">Styla is trusted by</h2>
+            </header>
+            <marquee behavior="scroll" direction="left" scrollamount="15">
+                <div class="flex pt-2 justify-center items-center gap-32">
+                    <img class="w-1/3 lg:w-1/6"
+                        src="https://infra2-prod.imgix.net/515d5f07-a05d-483a-aee1-6168d1dada3d/1687866685353_89ddd788-3b9e-4778-8a1b-dc641c1c7a7f?auto=format%2Ccompress&w=450&h=116&fit=original" />
+                    <img class="w-1/3 lg:w-1/6"
+                        src="https://infra2-prod.imgix.net/515d5f07-a05d-483a-aee1-6168d1dada3d/1686663445899_ef54d192-9bd8-46e2-b1f2-36dac4d4e7b8?auto=format%2Ccompress&w=450&h=116&fit=original" />
+                    <img class="w-1/3 lg:w-1/6"
+                        src="https://infra2-prod.imgix.net/515d5f07-a05d-483a-aee1-6168d1dada3d/1685531719203_6e6deeeb-a21b-420a-9483-7d84f8e77ffb?auto=format%2Ccompress&w=450&h=116&fit=original" />
+                    <img class="w-1/3 lg:w-1/6"
+                        src="https://infra2-prod.imgix.net/515d5f07-a05d-483a-aee1-6168d1dada3d/1687867080316_efeb6d5f-6416-43bc-b0a3-a77f7990d543?auto=format%2Ccompress&w=450&h=116&fit=original" />
+                </div>
+            </marquee>
+        </section>
+        <section class="performance_section relative">
+            <div class="container xl:max-w-6xl mx-auto px-4">
+                <header class="text-center mx-auto mb-12 lg:px-20">
+                    <h2 class="text-2xl leading-normal mb-2 font-bold text-black">Boost store performance</h2>
+                    <p class="text-gray-500 leading-relaxed font-light text-xl mx-auto pb-2">Upgrade your store, boost its
+                        performance and expand your business</p>
+                </header>
+                <div class="flex flex-wrap flex-row -mx-4 text-center">
+                    <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp"
+                        data-wow-duration="1s"
+                        style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
+                        <div
+                            class="py-8 px-12 mb-12 bg-white border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+                            <div class="inline-block text-gray-900 mb-4">
+                                <svg width="40" height="40" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M39.8682 79.2432C61.5947 79.2432 79.1992 61.6299 79.1992 39.9121C79.1992 18.1943 61.5947 0.581055 39.8682 0.581055C18.1416 0.581055 0.537109 18.1855 0.537109 39.9121C0.537109 61.6387 18.1504 79.2432 39.8682 79.2432Z" fill="black"/>
+                                    <path d="M39.8682 74.3301C20.8574 74.3301 5.4502 58.9228 5.4502 39.9121C5.4502 20.9014 20.8574 5.49414 39.8682 5.49414C58.8789 5.49414 74.2861 20.9014 74.2861 39.9121C74.2861 58.9228 58.8789 74.3301 39.8682 74.3301Z" fill="white"/>
+                                    <path d="M30.666 44.122H30.4902C27.7656 44.122 26.7109 42.2412 28.1172 39.9209L41.0547 18.6601C43.999 13.8173 44.9394 14.248 43.164 19.6269L39.2002 31.5888C38.3476 34.1728 39.8593 36.2382 42.5752 36.2382H50.1953L50.1601 36.2734H50.3359C53.0605 36.2734 54.1152 38.1543 52.709 40.4746L40.3252 60.83C37.082 66.165 36.0361 65.6904 38.0049 59.749L41.6347 48.8066C42.4873 46.2226 40.9756 44.1572 38.2597 44.1572H30.6396L30.666 44.122Z" fill="black"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-lg leading-normal mb-2 font-semibold text-black">Incredible speed</h3>
+                            <p class="text-gray-500">The fastest possible setup for your store leads to drastic conversion
+                                improvements</p>
+                        </div>
+                    </div>
+                    <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp"
+                        data-wow-duration="1s" data-wow-delay=".1s"
+                        style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;">
+                        <div
+                            class="py-8 px-12 mb-12 bg-white border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+                            <div class="inline-block text-gray-900 mb-4">
+                                <svg width="104" height="34" viewBox="0 0 208 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M134.347 78L165.921 0H144.991L123.395 50.4034L108.034 0H91.9426L75.457 50.4034L63.8261 27.4381L53.3042 59.7188L63.9886 78H84.5854L99.4867 32.7966L113.705 78H134.347Z" fill="black"/>
+                                    <path d="M19.8209 51.2241H32.6788C36.1918 51.2734 39.6946 50.8345 43.0869 49.92L46.41 39.6866L55.705 11.0906C54.9879 9.96178 54.1722 8.89866 53.2675 7.91375C48.5062 2.63791 41.5282 0 32.3334 0H0V78H19.8209V51.2241ZM36.8428 17.9441C38.7089 19.8182 39.6405 22.3261 39.6378 25.4678C39.6351 28.6095 38.8226 31.1188 37.2003 32.9956C35.402 35.0594 32.0924 36.0899 27.2716 36.0872H19.8209V15.1328H27.3041C31.7972 15.1328 34.9768 16.0699 36.8428 17.9441ZM153.095 64.0291L159.104 48.8962H176.447L168.216 25.9391L178.51 0L208 78H186.253L181.216 64.0291H153.095Z" fill="black"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-lg leading-normal mb-2 font-semibold text-black">Progressive Web App</h3>
+                            <p class="text-gray-500">The cutting edge standard for mobile presentations will give you a
+                                boost in SEO and usability</p>
+                        </div>
+                    </div>
+                    <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp"
+                        data-wow-duration="1s" data-wow-delay=".3s"
+                        style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;">
+                        <div
+                            class="py-8 px-12 mb-12 bg-white border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+                            <div class="inline-block text-gray-900 mb-4">
+                                <svg width="40" height="40" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M29 29L55 55M55 29L29 55M81 42C81 63.5393 63.5393 81 42 81C20.4609 81 3 63.5393 3 42C3 20.4609 20.4609 3 42 3C63.5393 3 81 20.4609 81 42Z" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-lg leading-normal mb-2 font-semibold text-black">No-code editing</h3>
+                            <p class="text-gray-500">Whatever you want to change in Styla, you just do it yourself. No IT
+                                required!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="info_section">
+            <div class="container max-w-xl py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
+                <div class="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
+                    <div>
+                        <h3 class="text-2xl font-bold tracki sm:text-3xl dark:text-gray-50">The fastest technology on the
+                            planet</h3>
+                        <p class="mt-3 text-lg dark:text-gray-500">Styla hosts your entire storefront and puts it on a
+                            cutting-edge Jamstack prerender architecture. This head for headless approach boosts your
+                            website’s speed and drives its conversion.</p>
+                        <div class="mt-12 space-y-12">
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <div
+                                        class="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-gray-900">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke="currentColor" class="w-7 h-7">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-medium leadi dark:text-gray-50">Lightning-fast Website Speed
+                                    </h4>
+                                    <p class="mt-2 dark:text-gray-500">Faster loading times are proven to increase user
+                                        satisfaction and retention.</p>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <div
+                                        class="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-gray-900">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke="currentColor" class="w-7 h-7">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-medium leadi dark:text-gray-50">Scalability and Reliability</h4>
+                                    <p class="mt-2 dark:text-gray-500">Styla can easily handle spikes in traffic, ensuring
+                                        that the website remains available and responsive during high-demand periods, such
+                                        as flash sales or holiday shopping seasons.</p>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <div
+                                        class="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-gray-900">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke="currentColor" class="w-7 h-7">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-medium leadi dark:text-gray-50">Flexibility and Agility</h4>
+                                    <p class="mt-2 dark:text-gray-400">This allows for quicker iterations and the ability to
+                                        respond rapidly to market trends and customer demands.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div aria-hidden="true" class="mt-10 lg:mt-0">
+                        <img width="51%" src="./public/img/fast.png" alt=""
+                            class="mx-auto rounded-lg shadow-lg dark:bg-gray-500">
+                    </div>
+                </div>
+                <div>
+                    <div class="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
+                        <div class="lg:col-start-2">
+                            <h3 class="text-2xl font-bold tracki sm:text-3xl dark:text-gray-50">PWA makes your store feel
+                                like a native app</h3>
+                            <p class="mt-3 text-lg dark:text-gray-400">With PWA your store embraces the cutting edge in
+                                mobile display technology. Your mobile experience is fast, smooth and even accessible when
+                                users are offline. Also, search engines really love it and rank you higher!</p>
+                            <div class="mt-12 space-y-12">
+                                <div class="flex">
+                                    <div class="flex-shrink-0">
+                                        <div
+                                            class="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-gray-900">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke="currentColor" class="w-7 h-7">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M5 13l4 4L19 7"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="ml-4">
+                                        <h4 class="text-lg font-medium leadi dark:text-gray-50">Enhanced Mobile Experience
+                                        </h4>
+                                        <p class="mt-2 dark:text-gray-400">Progressive Web Apps (PWAs) provide a seamless
+                                            and responsive user experience, making your store feel like a native app on
+                                            mobile devices.</p>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <div class="flex-shrink-0">
+                                        <div
+                                            class="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-gray-900">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke="currentColor" class="w-7 h-7">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M5 13l4 4L19 7"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="ml-4">
+                                        <h4 class="text-lg font-medium leadi dark:text-gray-50">Offline Accessibility</h4>
+                                        <p class="mt-2 dark:text-gray-400">PWAs utilize service workers to cache essential
+                                            content, allowing users to access your store even when they are offline or
+                                            experiencing a poor internet connection.</p>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <div class="flex-shrink-0">
+                                        <div
+                                            class="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-gray-900">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke="currentColor" class="w-7 h-7">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M5 13l4 4L19 7"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="ml-4">
+                                        <h4 class="text-lg font-medium leadi dark:text-gray-50">SEO Benefits</h4>
+                                        <p class="mt-2 dark:text-gray-400">Search engines prioritize websites with
+                                            fast-loading and mobile-friendly experiences, and PWAs excel in both aspects</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-10 lg:mt-0 lg:col-start-1 lg:row-start-1">
+                            <img width="51%" src="./public/img/pwa.png" alt=""
+                                class="mx-auto rounded-lg shadow-lg dark:bg-gray-500">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="dnd_section relative">
+            <div class="container xl:max-w-6xl mx-auto px-4">
+                <header class="text-center mx-auto mb-12 lg:px-20">
+                    <h2 class="text-2xl leading-normal mb-2 font-bold text-black">Release your full creative spirit with
+                        drag & drop editing</h2>
+                    <p class="text-gray-500 leading-relaxed font-light text-xl mx-auto pb-2">Editing your BigCommerce shop
+                        has never been easier! Get Styla and let every team member create, set up and edit pages in seconds,
+                        without any IT help!</p>
+                </header>
+                <video class="rounded-t-lg" src="./public/img/demo.mp4"></video>
+            </div>
+        </section>
+        <section class="testimonial_section">
+            <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-4">
+                <header class="text-left mx-auto mb-12 lg:px-4">
+                    <h2 class="text-2xl leading-normal mb-2 font-bold text-black">Testimonials</h2>
+                    <p class="text-gray-500 leading-relaxed font-light text-xl mx-auto pb-2">Read trusted reviews from our
+                        customers</p>
+                </header>
+                <div class="mt-12 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
+                    <blockquote class="rounded-lg bg-white p-8">
+                        <div class="flex items-center gap-4">
+                            <img alt="Man"
+                                src="https://infra2-prod.imgix.net/515d5f07-a05d-483a-aee1-6168d1dada3d/1644894760247_061717c1-d378-4daa-8b98-fa9757525f13?auto=format%2Ccompress&w=300&h=300&fit=crop&crop=faces%2Cedges"
+                                class="h-16 w-16 rounded-full object-cover" />
+    
+                            <div>
+                                <div class="flex justify-start gap-0.5 text-green-500">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                </div>
+                                <p class="mt-1 text-lg font-medium">Brandon Pittman</p>
+                            </div>
+                        </div>
+    
+                        <p class="line-clamp-2 sm:line-clamp-none mt-4 text-gray-500">
+                            On our old site, we used to try to increase page speed with complicated and costly techniques
+                            for marginal gains in the 10/100 range. We don’t have to do that at all anymore, and now our
+                            pages usually score in the 90/100 range in the page speed score and web vitals all pass the
+                            test.
+                        </p>
+                    </blockquote>
+    
+                    <blockquote class="rounded-lg bg-white p-8">
+                        <div class="flex items-center gap-4">
+                            <img alt="Man"
+                                src="https://infra2-prod.imgix.net/515d5f07-a05d-483a-aee1-6168d1dada3d/1675762699488_d87d0ec9-6470-43c8-a720-19ee40b823b5?auto=format%2Ccompress&w=300&h=300&fit=crop&crop=faces%2Cedges"
+                                class="h-16 w-16 rounded-full object-cover" />
+    
+                            <div>
+                                <div class="flex justify-start gap-0.5 text-green-500">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                </div>
+    
+                                <p class="mt-1 text-lg font-medium">Fesal Mohammed</p>
+                            </div>
+                        </div>
+    
+                        <p class="line-clamp-2 sm:line-clamp-none mt-4 text-gray-500">
+                            Very happy with our decision to migrate to Styla frontend. The feature-rich platform lets us
+                            update and deploy website changes quickly. In addition, the option to create a short cut on the
+                            customers home screen makes the website indistinguishable from a native application.
+                        </p>
+                    </blockquote>
+    
+                    <blockquote class="rounded-lg bg-white p-8">
+                        <div class="flex items-center gap-4">
+                            <img alt="Man"
+                                src="https://infra2-prod.imgix.net/515d5f07-a05d-483a-aee1-6168d1dada3d/1668438613025_ffb0b416-bb2b-4084-8328-6afdec6c421e?auto=format%2Ccompress&w=300&h=300&fit=crop&crop=faces%2Cedges"
+                                class="h-16 w-16 rounded-full object-cover" />
+    
+                            <div>
+                                <div class="flex justify-start gap-0.5 text-green-500">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                </div>
+    
+                                <p class="mt-1 text-lg font-medium">Denzel Thys</p>
+                            </div>
+                        </div>
+    
+                        <p class="line-clamp-2 sm:line-clamp-none mt-4 text-gray-500">
+                            I went live in two weeks and the new performance blew my mind. Also, my site looks great, is
+                            easier to maintain and features a PWA. I am so happy with Styla, it is great to work with and a
+                            game-changer for my business.
+                        </p>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+        <section class="story_section">
+            <header class="text-center mx-auto mb-12 lg:px-4">
+                <h2 class="text-2xl leading-normal mb-2 font-bold text-black">Customer Story</h2>
+                <p class="text-gray-500 leading-relaxed font-light text-xl mx-auto pb-2">See scaling brands unlocking their
+                    performance</p>
+            </header>
+            <div class="flex flex-wrap justify-center mx-2 lg:mx-0">
+                <div class="w-full md:w-1/2 lg:w-1/3 px-4">
+                    <div class="max-w-[370px] mx-auto mb-10">
+                        <div class="rounded overflow-hidden mb-8">
+                            <img src="https://cdn.tailgrids.com/1.0/assets/images/blogs/blog-01/image-01.jpg" alt="image"
+                                class="w-full" />
+                        </div>
+                        <div>
+                            <h3>
+                                <a href="https://www.styla.com/customer-stories/pittman-traffic" class="
+                        font-semibold
+                        text-xl
+                        sm:text-2xl
+                        lg:text-xl
+                        xl:text-2xl
+                        mb-4
+                        inline-block
+                        text-dark
+                        hover:text-primary
+                        ">Pittman Traffic increased conversion rates by 26% and GMV by 11%
+                                </a>
+                            </h3>
+                            <p class="text-base text-body-color">
+                                Pittman: Traffic and Safety equipment
+                            </p>
+                        </div>
+                        <span class="
+                        bg-primary
+                        rounded
+                        inline-block
+                        text-center
+                        py-1
+                        px-4
+                        text-xs
+                        leading-loose
+                        font-semibold
+                        text-white
+                        cursor-pointer
+                        mt-5
+                        ">Read More</span>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/3 px-4">
+                    <div class="max-w-[370px] mx-auto mb-10">
+                        <div class="rounded overflow-hidden mb-8">
+                            <img src="https://cdn.tailgrids.com/1.0/assets/images/blogs/blog-01/image-02.jpg" alt="image"
+                                class="w-full" />
+                        </div>
+                        <div>
+                            <h3>
+                                <a href="https://www.styla.com/customer-stories/thys-wood-design" class="
+                        font-semibold
+                        text-xl
+                        sm:text-2xl
+                        lg:text-xl
+                        xl:text-2xl
+                        mb-4
+                        inline-block
+                        text-dark
+                        hover:text-primary
+                        ">Thys Wood Design went up from 31 to 94 in Google's Lighthouse Speed test</a>
+                            </h3>
+                            <p class="text-base text-body-color">
+                                THYS Wood Design
+                            </p>
+                        </div>
+                        <span class="
+                        bg-primary
+                        rounded
+                        inline-block
+                        text-center
+                        py-1
+                        px-4
+                        text-xs
+                        leading-loose
+                        font-semibold
+                        text-white
+                        cursor-pointer
+                        mt-5
+                        ">Read More</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cms_section relative">
+            <div class="container xl:max-w-6xl mx-auto px-4">
+                <header class="text-center mx-auto mb-12 lg:px-20">
+                    <h2 class="text-2xl leading-normal mb-2 font-bold text-black">Styla CMS</h2>
+                    <p class="text-gray-500 leading-relaxed font-light text-xl mx-auto pb-2">You're not on BigCommerce? We
+                        have a no-code software solution for any other shop system as well.</p>
+                </header>
+                <div class="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
+                    <div>
+                        <p class="mt-3 text-lg dark:text-gray-500">Build immersive, digital experiences with Styla CMS,
+                            engage with your customers and transform your storefront into the driver of your growth. Styla
+                            CMS works great on top of any ecommerce platform.</p>
+                        <div class="mt-12">
+                            <div class="flex  items-center">
+                                <div class="flex-shrink-0">
+                                    <div
+                                        class="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-gray-900">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke="currentColor" class="w-7 h-7">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="ml-1">
+                                    <h4 class="text-lg font-medium leadi dark:text-gray-50">Design automation
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="flex  items-center">
+                                <div class="flex-shrink-0">
+                                    <div
+                                        class="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-gray-900">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke="currentColor" class="w-7 h-7">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="ml-1">
+                                    <h4 class="text-lg font-medium leadi dark:text-gray-50">Drag & drop editor
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="flex  items-center">
+                                <div class="flex-shrink-0">
+                                    <div
+                                        class="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-gray-900">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke="currentColor" class="w-7 h-7">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="ml-1">
+                                    <h4 class="text-lg font-medium leadi dark:text-gray-50">Create once publish everywhere
+                                        (COPE)
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="flex  items-center">
+                                <div class="flex-shrink-0">
+                                    <div
+                                        class="flex items-center justify-center w-12 h-12 rounded-md dark:bg-violet-400 dark:text-gray-900">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke="currentColor" class="w-7 h-7">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="ml-1">
+                                    <h4 class="text-lg font-medium leadi dark:text-gray-50">Shoppable content
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div aria-hidden="true" class="mt-10 lg:mt-0">
+                        <img src="https://infra2-prod.imgix.net/515d5f07-a05d-483a-aee1-6168d1dada3d/1686642191889_a6f83637-188d-407f-a503-bda4c31c8d2c?auto=format%2Ccompress&w=750&h=563&fit=original"
+                            alt="" class="mx-auto">
+                    </div>
+                </div>
+                <button class="font-medium bg-blue-700 text-white px-6 py-2 rounded cursor-pointer">
+                    Learn more
+                </button>
+            </div>
+        </section>
+        <footer class="mt-2 bg-white">
+            <div class="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
+                <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+                    <div>
+                        <div class="font-bold">STYLA
+                        </div>
+                        <ul class="mt-8 flex gap-6">
+                            <li>
+                                <a href="/" rel="noreferrer" target="_blank"
+                                    class="text-gray-700 transition hover:opacity-75">
+                                    <span class="sr-only">Facebook</span>
+    
+                                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </a>
+                            </li>
+    
+                            <li>
+                                <a href="/" rel="noreferrer" target="_blank"
+                                    class="text-gray-700 transition hover:opacity-75">
+                                    <span class="sr-only">Instagram</span>
+    
+                                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </a>
+                            </li>
+    
+                            <li>
+                                <a href="/" rel="noreferrer" target="_blank"
+                                    class="text-gray-700 transition hover:opacity-75">
+                                    <span class="sr-only">Twitter</span>
+    
+                                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path
+                                            d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                                    </svg>
+                                </a>
+                            </li>
+    
+                            <li>
+                                <a href="/" rel="noreferrer" target="_blank"
+                                    class="text-gray-700 transition hover:opacity-75">
+                                    <span class="sr-only">GitHub</span>
+    
+                                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </a>
+                            </li>
+    
+                            <li>
+                                <a href="/" rel="noreferrer" target="_blank"
+                                    class="text-gray-700 transition hover:opacity-75">
+                                    <span class="sr-only">Dribbble</span>
+    
+                                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-3">
+                        <div>
+                            <p class="font-medium text-gray-900">STYLA Froentend</p>
+    
+                            <ul class="mt-6 space-y-4 text-sm">
+                                <li>
+                                    <a href="#" class="text-gray-700 transition hover:opacity-75">
+                                        Overview
+                                    </a>
+                                </li>
+    
+                                <li>
+                                    <a href="#" class="text-gray-700 transition hover:opacity-75">
+                                        Froentend Roadmap
+                                    </a>
+                                </li>
+    
+                                <li>
+                                    <a href="#" class="text-gray-700 transition hover:opacity-75">
+                                        Help Center
+                                    </a>
+                                </li>
+    
+                                <li>
+                                    <a href="#" class="text-gray-700 transition hover:opacity-75">
+                                        Refferal Program
+                                    </a>
+                                </li>
+    
+                                <li>
+                                    <a href="#" class="text-gray-700 transition hover:opacity-75">
+                                        Login
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <div>
+                            <p class="font-medium text-gray-900">STYLA CMS</p>
+    
+                            <ul class="mt-6 space-y-4 text-sm">
+                                <li>
+                                    <a href="#" class="text-gray-700 transition hover:opacity-75">
+                                        Overview
+                                    </a>
+                                </li>
+    
+                                <li>
+                                    <a href="#" class="text-gray-700 transition hover:opacity-75">
+                                       CMS Roadmap
+                                    </a>
+                                </li>
+    
+                                <li>
+                                    <a href="#" class="text-gray-700 transition hover:opacity-75">
+                                        Documentation
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-700 transition hover:opacity-75">
+                                        Login
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <div>
+                            <p class="font-medium text-gray-900">STYLA</p>
+    
+                            <ul class="mt-6 space-y-4 text-sm">
+                                <li>
+                                    <a href="#" class="text-gray-700 transition hover:opacity-75">
+                                        STYLA Blogs
+                                    </a>
+                                </li>
+    
+                                <li>
+                                    <a href="#" class="text-gray-700 transition hover:opacity-75">
+                                        Blogs
+                                    </a>
+                                </li>
+    
+                                <li>
+                                    <a href="#" class="text-gray-700 transition hover:opacity-75">
+                                        FAQs
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-700 transition hover:opacity-75">
+                                        Contact
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-xs text-gray-500">
+                    &copy; 2023. STYLA. All rights reserved.
+                </p>
+            </div>
+        </footer>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const burger = document.querySelectorAll('.navbar-burger');
+            const menu = document.querySelectorAll('.navbar-menu');
+        
+            if (burger.length && menu.length) {
+                for (var i = 0; i < burger.length; i++) {
+                    burger[i].addEventListener('click', function() {
+                        for (var j = 0; j < menu.length; j++) {
+                            menu[j].classList.toggle('hidden');
+                        }
+                    });
+                }
+            }
+            const close = document.querySelectorAll('.navbar-close');
+            const backdrop = document.querySelectorAll('.navbar-backdrop');
+        
+            if (close.length) {
+                for (var i = 0; i < close.length; i++) {
+                    close[i].addEventListener('click', function() {
+                        for (var j = 0; j < menu.length; j++) {
+                            menu[j].classList.toggle('hidden');
+                        }
+                    });
+                }
+            }        
+            if (backdrop.length) {
+                for (var i = 0; i < backdrop.length; i++) {
+                    backdrop[i].addEventListener('click', function() {
+                        for (var j = 0; j < menu.length; j++) {
+                            menu[j].classList.toggle('hidden');
+                        }
+                    });
+                }
+            }
+        });
+    </script>
+    
+</body>
+
+</html>
